@@ -6,12 +6,15 @@
 
 
 
+
 namespace HDE {
 
     class TestServer : public SimpleServer {
         private:
             char buffer[30000] = {0};
             int new_socket;
+            std::string route;
+           
 
         public:
             TestServer();
